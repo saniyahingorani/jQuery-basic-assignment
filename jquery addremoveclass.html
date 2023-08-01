@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding and Removing Classes in jquery </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        .one{
+            font-size: 50px;
+            color: red;
+            background-color: bisque;
+        }
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <!-- Applying css using jQuery -->
+
+    <!-- <p>Applying css using jQuery</p>
+    <script>
+        $(document).ready(function() {
+            $("p").css({"background-color":"aquamarine", "color" : "darkcyan", "font-size" : "30px" })
+        })
+    </script> -->
+
+
+    <!-- Add class and remove class in jQuery -->
+
+    <!-- <p class="one">Add class and remove class in jQuery</p>
+    <button>click me</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").toggleClass("one")
+            })
+        })
+    </script> -->
+
+    <!-- jQuery Animation -->
+
+    <div></div>
+    <button>Click Me</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                // $("div").animate({"width":"toggle"})
+                $("div").animate({"height":"toggle"})
+            })
+        })
+    </script>
+
+</body>
+</html>

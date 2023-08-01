@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider with Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        #box-1{
+            width: 600px;
+            background-color: cadetblue;
+            text-align: center;
+            padding: 5px;
+            cursor: pointer;
+        }
+        #box-2{
+            height: 200px;
+            width: 610px;
+            background-color: aquamarine;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box-1">Click here</div>
+    <div id="box-2">Slider with Animation</div>
+    <script>
+        $(document).ready(function(){
+            $("#box-1").click(function(){
+                $("#box-2").slideToggle(2000)
+            })
+        })
+    </script>
+</body>
+</html>
